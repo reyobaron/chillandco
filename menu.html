@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Chill &amp; Co · Ilidža, Sarajevo</title>
+  <meta name="description" content="Official Chill & Co menu in PDF format with all dishes, prices, photos, and details." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #080808;
+      --dark: #141210;
+      --pink: #e8a4a0;
+      --cream: #fdf0e8;
+      --cream-dim: rgba(253, 240, 232, 0.72);
+      --gold: #c9a56c;
+      --gold-light: #e8c98e;
+      --gold-dim: rgba(201, 165, 108, 0.22);
+      --white: #ffffff;
+    }
+
+    html, body { min-height: 100%; }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: radial-gradient(circle at top, #221d19 0%, #141210 36%, #080808 100%);
+      color: var(--cream);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .menu-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 5%;
+      background: rgba(8, 8, 8, 0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--gold-dim);
+    }
+
+    .topbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem;
+      font-style: italic;
+      font-weight: 900;
+      color: var(--gold-light);
+      letter-spacing: 0.03em;
+      flex-shrink: 0;
+    }
+
+    .topbar-brand span { color: var(--pink); }
+
+    .topbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.75rem;
+    }
+
+    .topbar-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      padding: 0.7rem 1.15rem;
+      border: 1px solid var(--gold-dim);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .topbar-btn:hover {
+      background: var(--gold);
+      color: var(--dark);
+      border-color: var(--gold);
+    }
+
+    .menu-hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3.5rem 5% 2.25rem;
+      text-align: center;
+    }
+
+    .menu-kicker {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .menu-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 6vw, 4.8rem);
+      font-style: italic;
+      font-weight: 900;
+      line-height: 0.95;
+      color: var(--white);
+    }
+
+    .menu-title span { color: var(--pink); }
+
+    .menu-copy {
+      max-width: 58ch;
+      margin: 1.15rem auto 0;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--cream-dim);
+    }
+
+    .menu-pages-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 5% 3rem;
+    }
+
+    .menu-pages-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .menu-page-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--gold-dim);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.32);
+      overflow: hidden;
+    }
+
+    .menu-page-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .menu-page-label {
+      padding: 0.85rem 1rem;
+      border-top: 1px solid var(--gold-dim);
+      text-align: center;
+      color: rgba(253, 240, 232, 0.56);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .menu-note {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 5% 3.5rem;
+      text-align: center;
+      color: var(--cream-dim);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .menu-note a { color: var(--gold-light); }
+
+    .menu-footer {
+      padding: 1.5rem 5% 2.5rem;
+      text-align: center;
+      color: rgba(253, 240, 232, 0.5);
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+    }
+
+    @media (max-width: 720px) {
+      .menu-topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .topbar-actions {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .menu-pages-wrap { padding-bottom: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="menu-topbar">
+    <a class="topbar-brand" href="index.html">Chill<span>&amp;</span>Co</a>
+    <div class="topbar-actions">
+      <a class="topbar-btn" href="menu.pdf" target="_blank" rel="noopener noreferrer">Open Menu PDF</a>
+      <a class="topbar-btn" href="index.html">Back To Website</a>
+    </div>
+  </header>
+
+  <section class="menu-hero">
+    <p class="menu-kicker">Official Menu</p>
+    <h1 class="menu-title">Full <span>Menu</span></h1>
+    <p class="menu-copy">This page shows the full original menu directly inside the website, with all pages, photos, items, and prices visible without downloading a PDF.</p>
+  </section>
+
+  <main class="menu-pages-wrap">
+    <div class="menu-pages-grid">
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-01.jpg" alt="Chill & Co menu page 1" loading="eager" />
+        <figcaption class="menu-page-label">Menu Page 1</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-02.jpg" alt="Chill & Co menu page 2" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 2</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-03.jpg" alt="Chill & Co menu page 3" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 3</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-04.jpg" alt="Chill & Co menu page 4" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 4</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-05.jpg" alt="Chill & Co menu page 5" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 5</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-06.jpg" alt="Chill & Co menu page 6" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 6</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-07.jpg" alt="Chill & Co menu page 7" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 7</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-08.jpg" alt="Chill & Co menu page 8" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 8</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-09.jpg" alt="Chill & Co menu page 9" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 9</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-10.jpg" alt="Chill & Co menu page 10" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 10</figcaption>
+      </figure>
+      <figure class="menu-page-card">
+        <img class="menu-page-image" src="menu-pages/page-11.jpg" alt="Chill & Co menu page 11" loading="lazy" />
+        <figcaption class="menu-page-label">Menu Page 11</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <section class="menu-note">
+    <p>The menu is displayed as website pages, and the original file is also available here: <a href="menu.pdf" target="_blank" rel="noopener noreferrer">Open Menu PDF</a>.</p>
+  </section>
+
+  <footer class="menu-footer">
+    <p>Džemala Bijedića 279 · Ilidža · Sarajevo · <a href="https://wa.me/387603162665" target="_blank" rel="noopener noreferrer">+387 60 31 62 665</a></p>
+  </footer>
+</body>
+</html>
