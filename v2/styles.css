@@ -388,12 +388,12 @@ p {
 }
 
 .board-strip img {
-  width: 36px !important;
-  max-width: 36px !important;
+  width: 145px;
+  max-width: 145px;
   height: auto;
-  border-radius: 6px;
-  border: 0;
-  box-shadow: none;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 18px var(--shadow);
 }
 
 .site-footer {
