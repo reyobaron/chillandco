@@ -1,6 +1,24 @@
 const yearEl = document.getElementById("year");
 yearEl.textContent = new Date().getFullYear();
 
+const heroVideo = document.querySelector(".hero-visual video");
+if (heroVideo) {
+  heroVideo.muted = true;
+
+  const forcePlay = () => {
+    const playPromise = heroVideo.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {});
+    }
+  };
+
+  heroVideo.addEventListener("loadeddata", forcePlay);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) forcePlay();
+  });
+  document.addEventListener("touchstart", forcePlay, { once: true, passive: true });
+}
+
 const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightboxImage");
 const closeLightbox = document.getElementById("closeLightbox");

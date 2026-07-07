@@ -141,8 +141,12 @@ button {
   min-height: 54vh;
   max-height: 72vh;
   object-fit: cover;
-  border-radius: 36px;
+  border-radius: 0;
   box-shadow: 0 24px 50px var(--shadow);
+}
+
+.hero-visual video {
+  background: #000;
 }
 
 .brand-news-grid,
