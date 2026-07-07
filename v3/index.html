@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill&co | Sweet Moments</title>
+    <meta
+      name="description"
+      content="Chill&co serves handcrafted sweets, gift boxes, and cozy cafe vibes inspired by premium dessert boutiques."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Chill&co</div>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Premium Dessert Boutique</p>
+          <h1>Serve Joy In Every Bite.</h1>
+          <p>
+            A warm, playful space where handcrafted sweets meet rich coffee and gift-worthy
+            presentation.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Explore Menu</a>
+            <a class="btn btn-outline" href="#gallery">See Photos</a>
+          </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <img src="assets/images/photo-1.jpeg" alt="Chill&co signature sweets" />
+          <img src="assets/images/photo-2.jpeg" alt="Dessert close-up" />
+        </div>
+      </section>
+
+      <section class="menu" id="menu">
+        <h2 class="section-title reveal">Customer Favorites</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Chocolate Drip Cups</h3>
+            <p>Layered cream, fruit, and rich chocolate in premium cups.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Gift Box Collection</h3>
+            <p>Elegant boxes for birthdays, events, and everyday sweet surprises.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Hot & Iced Signature Drinks</h3>
+            <p>Balanced blends made to pair perfectly with desserts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <h2 class="section-title reveal">Chill&co Moments</h2>
+        <div class="gallery-grid">
+          <button class="photo reveal" data-full="assets/images/photo-1.jpeg" aria-label="Open photo 1">
+            <img src="assets/images/photo-1.jpeg" alt="Dessert photo 1" />
+          </button>
+          <button class="photo reveal" data-full="assets/images/photo-2.jpeg" aria-label="Open photo 2">
+            <img src="assets/images/photo-2.jpeg" alt="Dessert photo 2" />
+          </button>
+          <button class="photo reveal" data-full="assets/images/photo-3.jpeg" aria-label="Open photo 3">
+            <img src="assets/images/photo-3.jpeg" alt="Dessert photo 3" />
+          </button>
+          <button class="photo reveal" data-full="assets/images/photo-4.jpeg" aria-label="Open photo 4">
+            <img src="assets/images/photo-4.jpeg" alt="Dessert photo 4" />
+          </button>
+          <button class="photo reveal" data-full="assets/images/photo-5.jpeg" aria-label="Open photo 5">
+            <img src="assets/images/photo-5.jpeg" alt="Dessert photo 5" />
+          </button>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-copy reveal">
+          <p class="eyebrow">Our Story</p>
+          <h2>Crafted For Sharing</h2>
+          <p>
+            Chill&co blends premium ingredients, creative plating, and a cozy atmosphere for
+            families, friends, and celebrations.
+          </p>
+        </div>
+        <img class="reveal" src="assets/images/photo-3.jpeg" alt="Chill&co interior and sweets" />
+      </section>
+
+      <section class="visit" id="visit">
+        <h2 class="section-title reveal">Visit Chill&co</h2>
+        <div class="visit-panel reveal">
+          <p>Working hours: 14:00 - 23:00</p>
+          <p>Phone: 033 742 916</p>
+          <p>Džemala Bijedića br. 279, Ilidža, Kanton Sarajevo</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Chill&co. All rights reserved.</p>
+    </footer>
+
+    <dialog id="lightbox" aria-label="Photo lightbox">
+      <img id="lightboxImage" src="" alt="Expanded dessert photo" />
+      <button id="closeLightbox" aria-label="Close photo">Close</button>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
