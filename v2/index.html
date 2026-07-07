@@ -17,139 +17,140 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="brand">
+    <header class="site-header">
+      <a class="logo-box" href="#top" aria-label="Chill & Co home">
         <img src="assets/client/logo.JPG" alt="Chill & Co logo" />
-        <span>Chill&co</span>
-      </div>
-      <nav>
-        <a href="#brand">Brand</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
-        <a href="#visit">Visit</a>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#brand">The Brand</a>
+        <a href="#presence">Global Presence</a>
+        <a href="#news">News</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#careers">Careers</a>
       </nav>
+
+      <div class="header-tools">
+        <a class="franchise-link" href="#franchise">Franchise</a>
+        <div class="language-switch" aria-label="Language switcher">
+          <a class="active" href="#">English</a>
+          <a href="#">Bosnian</a>
+        </div>
+        <div class="badge-logo" aria-hidden="true">
+          <img src="assets/client/logo.JPG" alt="" />
+        </div>
+      </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Modern Restaurant Experience</p>
-          <h1>A place people love to come back to.</h1>
-          <p>
-            Chill & Co brings together beautifully crafted food, stylish surroundings, and a
-            warm atmosphere designed for memorable moments.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#brand">Discover The Brand</a>
-            <a class="btn btn-outline" href="#gallery">See Photos</a>
-          </div>
-        </div>
-
-        <div class="hero-media reveal">
-          <img src="assets/client/photo-01.jpeg" alt="Chill & Co featured interior or dish" />
-          <img src="assets/client/photo-02.jpeg" alt="Chill & Co featured presentation" />
-        </div>
+    <main class="page-shell" id="top">
+      <section class="hero-visual reveal">
+        <img src="assets/client/photo-05.jpeg" alt="Chill & Co signature interior and food presentation" />
       </section>
 
-      <section class="brand-story" id="brand">
-        <div class="statement-card reveal">
+      <section class="brand-news-grid">
+        <article class="story-panel reveal" id="brand">
           <p class="eyebrow">About The Brand</p>
-          <h2 class="section-title">Built from passion, design, and unforgettable food.</h2>
+          <h1>Built from passion, presentation, and a memorable atmosphere.</h1>
           <p>
             Chill & Co was created by an enthusiastic young man with a passion for beautifully
             crafted food, creative presentation, and inspiring interior design.
           </p>
-          <p>
-            His vision was simple...
-          </p>
+          <p>His vision was simple...</p>
           <p class="statement-highlight">TO CREATE A PLACE PEOPLE LOVE TO COME BACK TO.</p>
           <p>
             By combining exceptional flavors, eye-catching dishes, and a modern, welcoming
             atmosphere, he turned that vision into a destination where every visit is about more
-            than just dining-it's about creating memorable moments.
+            than just dining - it's about creating memorable moments.
           </p>
           <p>
             Today, Chill & Co continues to bring people together through great food, stylish
             surroundings, and an experience designed to be enjoyed and shared.
           </p>
-        </div>
-        <div class="brand-side reveal">
-          <img src="assets/client/photo-03.jpeg" alt="Chill & Co signature atmosphere" />
-          <img src="assets/client/photo-04.jpeg" alt="Chill & Co restaurant presentation" />
-        </div>
+          <a class="btn btn-primary" href="#menu">Learn More</a>
+        </article>
+
+        <aside class="news-panel reveal" id="news">
+          <p class="eyebrow">Our Latest News</p>
+          <h2 class="section-title">Fresh highlights from Chill & Co</h2>
+          <div class="news-list">
+            <article class="news-item">
+              <h3>Signature presentations that turn every order into an experience</h3>
+              <p>From plating to atmosphere, every detail is designed to stand out.</p>
+            </article>
+            <article class="news-item">
+              <h3>A welcoming destination for friends, families, and shared moments</h3>
+              <p>Comfort, hospitality, and style come together in every visit.</p>
+            </article>
+            <article class="news-item">
+              <h3>Creative food, modern design, and a brand built to grow</h3>
+              <p>Chill & Co blends visual identity, food quality, and a return-worthy experience.</p>
+            </article>
+          </div>
+        </aside>
       </section>
 
-      <section class="gallery" id="gallery">
-        <h2 class="section-title reveal">Chill&co Moments</h2>
-        <div class="gallery-grid">
-          <button class="photo reveal" data-full="assets/client/photo-01.jpeg" aria-label="Open photo 1">
-            <img src="assets/client/photo-01.jpeg" alt="Chill & Co gallery photo 1" />
+      <section class="feature-grid">
+        <article class="feature-card reveal" id="menu">
+          <button class="photo media-card" data-full="assets/client/photo-06.jpeg" aria-label="Open menu feature image">
+            <img src="assets/client/photo-06.jpeg" alt="Chill & Co featured menu item" />
           </button>
-          <button class="photo reveal" data-full="assets/client/photo-02.jpeg" aria-label="Open photo 2">
-            <img src="assets/client/photo-02.jpeg" alt="Chill & Co gallery photo 2" />
+          <div class="feature-copy">
+            <p class="eyebrow">Our Menu</p>
+            <h2 class="section-title">Designed to impress at every table</h2>
+            <p>
+              We take pride in serving dishes that are rich in flavor, bold in presentation,
+              and made to create memorable moments worth sharing.
+            </p>
+            <a class="btn btn-outline" href="#gallery-wall">Learn More</a>
+          </div>
+        </article>
+
+        <article class="feature-card reveal" id="presence">
+          <div class="feature-copy">
+            <p class="eyebrow">Where We Operate Here</p>
+            <h2 class="section-title">A concept made for repeat visits and wider growth</h2>
+            <p>
+              Every corner of Chill & Co is planned to combine strong visual identity, guest
+              comfort, and a menu offering that fits modern casual dining expectations.
+            </p>
+            <div class="stats-grid">
+              <div>
+                <strong>Modern</strong>
+                <span>Interior experience</span>
+              </div>
+              <div>
+                <strong>Creative</strong>
+                <span>Food presentation</span>
+              </div>
+              <div>
+                <strong>Warm</strong>
+                <span>Guest atmosphere</span>
+              </div>
+              <div>
+                <strong>Scalable</strong>
+                <span>Brand potential</span>
+              </div>
+            </div>
+          </div>
+          <button class="photo media-card" data-full="assets/client/photo-07.jpeg" aria-label="Open global presence feature image">
+            <img src="assets/client/photo-07.jpeg" alt="Chill & Co dining atmosphere" />
           </button>
-          <button class="photo reveal" data-full="assets/client/photo-03.jpeg" aria-label="Open photo 3">
-            <img src="assets/client/photo-03.jpeg" alt="Chill & Co gallery photo 3" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-04.jpeg" aria-label="Open photo 4">
-            <img src="assets/client/photo-04.jpeg" alt="Chill & Co gallery photo 4" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-05.jpeg" aria-label="Open photo 5">
-            <img src="assets/client/photo-05.jpeg" alt="Chill & Co gallery photo 5" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-06.jpeg" aria-label="Open photo 6">
-            <img src="assets/client/photo-06.jpeg" alt="Chill & Co gallery photo 6" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-07.jpeg" aria-label="Open photo 7">
-            <img src="assets/client/photo-07.jpeg" alt="Chill & Co gallery photo 7" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-08.jpeg" aria-label="Open photo 8">
-            <img src="assets/client/photo-08.jpeg" alt="Chill & Co gallery photo 8" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-09.jpeg" aria-label="Open photo 9">
-            <img src="assets/client/photo-09.jpeg" alt="Chill & Co gallery photo 9" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-10.jpeg" aria-label="Open photo 10">
-            <img src="assets/client/photo-10.jpeg" alt="Chill & Co gallery photo 10" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-11.jpeg" aria-label="Open photo 11">
-            <img src="assets/client/photo-11.jpeg" alt="Chill & Co gallery photo 11" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-12.jpeg" aria-label="Open photo 12">
-            <img src="assets/client/photo-12.jpeg" alt="Chill & Co gallery photo 12" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-13.jpeg" aria-label="Open photo 13">
-            <img src="assets/client/photo-13.jpeg" alt="Chill & Co gallery photo 13" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-14.jpeg" aria-label="Open photo 14">
-            <img src="assets/client/photo-14.jpeg" alt="Chill & Co gallery photo 14" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-15.jpeg" aria-label="Open photo 15">
-            <img src="assets/client/photo-15.jpeg" alt="Chill & Co gallery photo 15" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-16.jpeg" aria-label="Open photo 16">
-            <img src="assets/client/photo-16.jpeg" alt="Chill & Co gallery photo 16" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-17.jpeg" aria-label="Open photo 17">
-            <img src="assets/client/photo-17.jpeg" alt="Chill & Co gallery photo 17" />
-          </button>
-          <button class="photo reveal" data-full="assets/client/photo-18.jpeg" aria-label="Open photo 18">
-            <img src="assets/client/photo-18.jpeg" alt="Chill & Co gallery photo 18" />
-          </button>
-        </div>
+        </article>
       </section>
 
-      <section class="about" id="about">
-        <div class="about-copy reveal">
+      <section class="who-we-are-section">
+        <div class="who-copy reveal">
           <p class="eyebrow">Who We Are</p>
-          <h2>More than a restaurant.</h2>
+          <h2 class="section-title">More than a restaurant</h2>
           <p>
             At Chill & Co, our story is built on passion, creativity, and bringing people
-            together. We're more than just a restaurant-we're a place where great food, stylish
-            surroundings, and memorable experiences come together.
+            together. We're more than just a restaurant - we're a place where great food,
+            stylish surroundings, and memorable experiences come together.
           </p>
           <p>Our mission is simple:</p>
-          <p class="statement-highlight">To create moments people love to share and memories they'll always come back for.</p>
+          <p class="statement-highlight">
+            To create moments people love to share and memories they'll always come back for.
+          </p>
           <p>
             Every visit to Chill & Co is designed to feel welcoming, comfortable, and
             unforgettable. From our carefully crafted dishes to our modern interior and warm
@@ -161,28 +162,80 @@
             becomes a special occasion.
           </p>
           <p>
-            At Chill & Co, we're passionate about delivering more than just great flavors-we
+            At Chill & Co, we're passionate about delivering more than just great flavors - we
             create experiences that keep our guests coming back, again and again.
           </p>
         </div>
-        <div class="about-stack reveal">
-          <img src="assets/client/photo-11.jpeg" alt="Chill & Co atmosphere photo" />
-          <img src="assets/client/photo-12.jpeg" alt="Chill & Co dish presentation" />
+
+        <div class="gallery-wall reveal" id="gallery-wall">
+          <button class="photo wall-photo" data-full="assets/client/photo-08.jpeg" aria-label="Open gallery photo 1">
+            <img src="assets/client/photo-08.jpeg" alt="Chill & Co gallery photo 1" />
+          </button>
+          <button class="photo wall-photo" data-full="assets/client/photo-09.jpeg" aria-label="Open gallery photo 2">
+            <img src="assets/client/photo-09.jpeg" alt="Chill & Co gallery photo 2" />
+          </button>
+          <button class="photo wall-photo" data-full="assets/client/photo-10.jpeg" aria-label="Open gallery photo 3">
+            <img src="assets/client/photo-10.jpeg" alt="Chill & Co gallery photo 3" />
+          </button>
+          <button class="photo wall-photo" data-full="assets/client/photo-11.jpeg" aria-label="Open gallery photo 4">
+            <img src="assets/client/photo-11.jpeg" alt="Chill & Co gallery photo 4" />
+          </button>
+          <button class="photo wall-photo" data-full="assets/client/photo-12.jpeg" aria-label="Open gallery photo 5">
+            <img src="assets/client/photo-12.jpeg" alt="Chill & Co gallery photo 5" />
+          </button>
+          <button class="photo wall-photo" data-full="assets/client/photo-13.jpeg" aria-label="Open gallery photo 6">
+            <img src="assets/client/photo-13.jpeg" alt="Chill & Co gallery photo 6" />
+          </button>
+          <button class="photo wall-photo" data-full="assets/client/photo-14.jpeg" aria-label="Open gallery photo 7">
+            <img src="assets/client/photo-14.jpeg" alt="Chill & Co gallery photo 7" />
+          </button>
+          <button class="photo wall-photo" data-full="assets/client/photo-15.jpeg" aria-label="Open gallery photo 8">
+            <img src="assets/client/photo-15.jpeg" alt="Chill & Co gallery photo 8" />
+          </button>
         </div>
       </section>
 
-      <section class="visit" id="visit">
-        <h2 class="section-title reveal">Visit Chill&co</h2>
-        <div class="visit-panel reveal">
-          <p>Working hours: 14:00 - 23:00</p>
-          <p>Phone: 033 742 916</p>
-          <p>Džemala Bijedića br. 279, Ilidža, Kanton Sarajevo</p>
+      <section class="bottom-grid">
+        <article class="cta-panel reveal" id="franchise">
+          <p class="eyebrow">Success Is Shared</p>
+          <h2 class="section-title">Franchising opportunities can grow from a strong concept</h2>
+          <p>
+            Chill & Co is built on a clear identity: strong branding, a welcoming space, and a
+            food experience guests remember. That makes it a concept with room to expand.
+          </p>
+          <button class="photo inline-photo" data-full="assets/client/photo-16.jpeg" aria-label="Open franchise image">
+            <img src="assets/client/photo-16.jpeg" alt="Chill & Co franchise atmosphere" />
+          </button>
+        </article>
+
+        <article class="cta-panel reveal" id="careers">
+          <p class="eyebrow">Careers</p>
+          <h2 class="section-title">Join a team built around hospitality and creativity</h2>
+          <p>
+            The Chill & Co experience depends on people who care about food quality, guest
+            comfort, and a polished presentation from start to finish.
+          </p>
+          <button class="photo inline-photo" data-full="assets/client/photo-17.jpeg" aria-label="Open careers image">
+            <img src="assets/client/photo-17.jpeg" alt="Chill & Co team and atmosphere" />
+          </button>
+        </article>
+      </section>
+
+      <section class="visit-strip reveal">
+        <div>
+          <p class="eyebrow">Visit Chill & Co</p>
+          <h2 class="section-title">Dzemala Bijedica br. 279, Ilidza, Kanton Sarajevo</h2>
+        </div>
+        <div class="visit-meta">
+          <span>Working hours: 14:00 - 23:00</span>
+          <span>Phone: 033 742 916</span>
+          <span>Designed for memorable moments</span>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>© <span id="year"></span> Chill&co. All rights reserved.</p>
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Chill & Co. All rights reserved.</p>
     </footer>
 
     <dialog id="lightbox" aria-label="Photo lightbox">
