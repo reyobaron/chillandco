@@ -45,7 +45,7 @@ button {
   top: 0;
   z-index: 100;
   display: grid;
-  grid-template-columns: 230px 1fr auto;
+  grid-template-columns: 280px 1fr auto;
   align-items: center;
   gap: 1.25rem;
   padding: 0.95rem 1.5rem;
@@ -59,7 +59,7 @@ button {
 }
 
 .logo-box img {
-  width: 190px;
+  width: 240px;
   height: auto;
   object-fit: contain;
   border-radius: 0;
@@ -466,7 +466,7 @@ dialog::backdrop {
   }
 
   .logo-box img {
-    width: 150px;
+    width: 180px;
     height: auto;
   }
 
