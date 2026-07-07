@@ -126,23 +126,24 @@ button {
 }
 
 .page-shell {
-  width: min(1240px, calc(100vw - 2rem));
-  margin: 0 auto;
-  padding: 1.5rem 0 3rem;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 3rem;
 }
 
 .hero-visual {
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
 }
 
 .hero-visual img,
 .hero-visual video {
-  width: 100%;
-  min-height: 54vh;
-  max-height: 72vh;
+  width: 100vw;
+  min-height: 0;
+  max-height: none;
+  height: auto;
   object-fit: cover;
   border-radius: 0;
-  box-shadow: 0 24px 50px var(--shadow);
+  box-shadow: none;
 }
 
 .hero-visual video {
@@ -154,25 +155,27 @@ button {
 .who-we-are-section,
 .bottom-grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1.4rem;
   margin-bottom: 2rem;
+  padding: 0 1.5rem;
 }
 
 .brand-news-grid {
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1fr;
 }
 
 .feature-grid {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .who-we-are-section {
-  grid-template-columns: 0.95fr 1.05fr;
+  grid-template-columns: 1fr;
   align-items: start;
 }
 
 .bottom-grid {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .story-panel,
@@ -360,6 +363,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  margin: 0 1.5rem;
 }
 
 .visit-strip .section-title {
@@ -486,8 +490,19 @@ dialog::backdrop {
 
 @media (max-width: 560px) {
   .page-shell {
-    width: min(100vw - 1rem, 1240px);
+    width: 100%;
     padding-top: 1rem;
+  }
+
+  .brand-news-grid,
+  .feature-grid,
+  .who-we-are-section,
+  .bottom-grid {
+    padding: 0 0.8rem;
+  }
+
+  .visit-strip {
+    margin: 0 0.8rem;
   }
 
   .site-header {
@@ -504,7 +519,8 @@ dialog::backdrop {
     grid-template-columns: 1fr;
   }
 
-  .hero-visual img {
-    min-height: 38vh;
+  .hero-visual img,
+  .hero-visual video {
+    min-height: 36vh;
   }
 }
