@@ -1,6 +1,6 @@
 :root {
   --bg: #f6f0e8;
-  --header-bg: rgb(253, 245, 232);
+  --header-bg: rgb(250, 235, 217);
   --surface: #fffaf4;
   --surface-2: #efe2d4;
   --ink: #26160f;
@@ -67,7 +67,7 @@ button {
   border: 0;
   box-shadow: none;
   background: transparent;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 
 .primary-nav {
