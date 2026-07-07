@@ -381,6 +381,21 @@ p {
   font-weight: 700;
 }
 
+.board-strip {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 1.5rem 0;
+}
+
+.board-strip img {
+  width: 36px !important;
+  max-width: 36px !important;
+  height: auto;
+  border-radius: 6px;
+  border: 0;
+  box-shadow: none;
+}
+
 .site-footer {
   padding: 0 1rem 2.5rem;
   text-align: center;
@@ -505,6 +520,10 @@ dialog::backdrop {
 
   .visit-strip {
     margin: 0 0.8rem;
+  }
+
+  .board-strip {
+    margin: 0.5rem 0.8rem 0;
   }
 
   .site-header {
