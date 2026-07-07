@@ -135,7 +135,8 @@ button {
   margin-bottom: 2rem;
 }
 
-.hero-visual img {
+.hero-visual img,
+.hero-visual video {
   width: 100%;
   min-height: 54vh;
   max-height: 72vh;
