@@ -45,7 +45,7 @@ button {
   top: 0;
   z-index: 100;
   display: grid;
-  grid-template-columns: 190px 1fr auto;
+  grid-template-columns: 230px 1fr auto;
   align-items: center;
   gap: 1.25rem;
   padding: 0.95rem 1.5rem;
@@ -59,12 +59,12 @@ button {
 }
 
 .logo-box img {
-  width: 156px;
+  width: 190px;
   height: auto;
   object-fit: contain;
-  border-radius: 22px;
-  border: 2px solid rgba(143, 92, 72, 0.45);
-  box-shadow: 0 10px 22px rgba(38, 22, 15, 0.08);
+  border-radius: 0;
+  outline: 2px solid rgba(143, 92, 72, 0.4);
+  outline-offset: 2px;
   background: transparent;
 }
 
@@ -466,7 +466,7 @@ dialog::backdrop {
   }
 
   .logo-box img {
-    width: 124px;
+    width: 150px;
     height: auto;
   }
 
