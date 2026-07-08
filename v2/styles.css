@@ -358,6 +358,7 @@ p {
 .inline-photo img {
   min-height: 220px;
   margin-top: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .visit-strip {
