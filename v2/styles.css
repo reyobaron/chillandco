@@ -485,6 +485,10 @@ dialog::backdrop {
   .visit-meta {
     justify-items: start;
   }
+
+  .map-section {
+    margin-top: 1.5rem;
+  }
 }
 
 @media (max-width: 760px) {
@@ -536,6 +540,10 @@ dialog::backdrop {
 
   .visit-strip {
     margin: 0 0.8rem;
+  }
+
+  .map-section {
+    margin: 1.8rem 0.8rem 0;
   }
 
   .board-strip {
