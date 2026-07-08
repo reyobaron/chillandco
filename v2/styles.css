@@ -406,6 +406,20 @@ p {
   text-decoration: underline;
 }
 
+.visit-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #e1306c;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.visit-instagram:hover {
+  text-decoration: underline;
+}
+
 .map-section {
   margin: 1.5rem 1.5rem 0;
   border-radius: 24px;
