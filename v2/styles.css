@@ -68,6 +68,7 @@ button {
   box-shadow: none;
   background: transparent;
   mix-blend-mode: normal;
+  filter: sepia(0.4) saturate(2.5) hue-rotate(340deg) brightness(1.05);
 }
 
 .primary-nav {
